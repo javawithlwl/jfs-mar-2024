@@ -23,6 +23,6 @@ public class TernaryOperatorExample2 {
 
     public static String greetings(String username) {
         String name = username.isEmpty() ? "User" : username;
-        return "Hello " + name + ",\n\t Welcome to Java World";
+        return "Hello " + name + ",\n\t Welcome to Java World!";
     }
 }
