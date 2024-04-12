@@ -8,5 +8,7 @@ public class AssignmentQuestion {
 
         // Find the average age of the employees
         // Find the total salary of the employees
+
+
     }
 }
