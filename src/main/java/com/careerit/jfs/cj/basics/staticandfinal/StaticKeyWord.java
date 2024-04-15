@@ -1,7 +1,8 @@
 package com.careerit.jfs.cj.basics.staticandfinal;
 
 import static java.lang.Math.*;
-import static java.lang.System.*;
+
+import static java.lang.System.out;
 import  static com.careerit.jfs.cj.basics.staticandfinal.MyConstants.*;
 // static key word: variable, method, block, inner class, imports
 public class StaticKeyWord {
