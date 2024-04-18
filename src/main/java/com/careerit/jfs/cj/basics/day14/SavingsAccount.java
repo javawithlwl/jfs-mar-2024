@@ -8,4 +8,13 @@ public class SavingsAccount extends Account{
         super(accNum, name, balance);
         this.minBalance = minBalance;
     }
+    @Override
+    public void withdraw(double amount) {
+        if(balance - minBalance < amount ) {
+            System.out.println("Insufficient balance");
+        }else {
+            balance -= amount;
+            System.out.println("Amount "+amount+" is debited from your account");
+        }
+    }
 }
