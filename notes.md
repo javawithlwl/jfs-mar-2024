@@ -21,3 +21,12 @@ class VariableScopes{
 
 
 }
+
+DS:
+    MyCollection
+      10 methods
+    6 Methods
+    4 Methods different implementation
+MyList, MySet, MyQueue, MyStack
+
+
