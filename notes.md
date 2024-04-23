@@ -30,3 +30,8 @@ DS:
 MyList, MySet, MyQueue, MyStack
 
 
+// 1. Class and Object 
+// 2. Inheritance
+// 3. Polymorphism
+// 4. Abstraction
+// 5. Encapsulation
