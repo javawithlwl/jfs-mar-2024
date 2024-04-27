@@ -35,3 +35,13 @@ MyList, MySet, MyQueue, MyStack
 // 3. Polymorphism
 // 4. Abstraction
 // 5. Encapsulation
+
+[
+    {
+        fullName
+        gender
+        country
+        salary
+        formattedSalary  $1000
+    }
+]
