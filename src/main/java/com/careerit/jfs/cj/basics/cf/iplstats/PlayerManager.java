@@ -23,5 +23,10 @@ public class PlayerManager {
 
         List<TeamAndAmountWithFormattedData> teamAndAmountWithFormattedData = service.getTeamAndAmountWithFormattedData();
         System.out.println(teamAndAmountWithFormattedData);
+
+        // Get the all sorted players based on the amount,role,country, name in the descending order
+
+        List<Player> sortedPlayers = service.sortedPlayers();
+        sortedPlayers.forEach(System.out::println);
     }
 }

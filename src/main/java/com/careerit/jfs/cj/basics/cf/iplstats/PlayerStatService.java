@@ -2,6 +2,7 @@ package com.careerit.jfs.cj.basics.cf.iplstats;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class PlayerStatService {
@@ -81,6 +82,16 @@ public class PlayerStatService {
                         .mapToDouble(Player::getAmount)
                         .sum())))
                 .toList();
+    }
+
+    // Sort by amount, role, country, name in the descending order
+    public List<Player> sortedPlayers(){
+       return players.stream()
+               .sorted(Comparator.comparing(Player::getAmount).reversed()
+                .thenComparing(Player::getRole).reversed()
+                .thenComparing(Player::getTeamName).reversed()
+                .thenComparing(Player::getName).reversed()
+                .reversed()).toList();
     }
 
     private String formatAmount(double amount) {
