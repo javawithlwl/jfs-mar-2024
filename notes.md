@@ -45,3 +45,37 @@ MyList, MySet, MyQueue, MyStack
         formattedSalary  $1000
     }
 ]
+
+
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+at com.careerit.jfs.cj.basics.exception.ExceptionExample1.main(ExceptionExample1.java:15)
+
+
+Exception:
+
+    Exception is an event that disrupts the normal flow of the program.
+
+    Error:
+        Error is an event that disrupts the normal flow of the program. Error is caused by the environment in which the application is running.
+        
+    Exception:
+         Exception is an event that disrupts the normal flow of the program.
+    
+    Bug:
+        Bug is a defect in the code that causes the program to behave in an unexpected way.
+
+    1. Checked Exception
+    2. Unchecked Exception
+
+                                Object
+                                    |
+                                    |
+                                 Throwable
+                                    |
+                                    |
+                        Error               Exception
+                                             |      |
+                                             |      |
+                                 IoException        RuntimeException
+                                                    SQLException        
+                                                    NullPointerException
