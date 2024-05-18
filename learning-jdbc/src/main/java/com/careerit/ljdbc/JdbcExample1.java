@@ -1,5 +1,7 @@
 package com.careerit.ljdbc;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -9,6 +11,8 @@ import java.util.List;
 
 record Player(int id, String name, String teamName, String role, double amount) {
 }
+
+@Slf4j
 public class JdbcExample1 {
 
     public static void main(String[] args) {
@@ -34,8 +38,9 @@ public class JdbcExample1 {
                 double amount = rs.getDouble("amount");
                 players.add(new Player(id, name, teamName, role, amount));
             }
+            log.info("Total players found : {}", players.size());
         }catch (SQLException e){
-            e.printStackTrace();
+            log.error("While fetching players : {} ", e.getMessage(),e);
         }finally {
             ConnectionUtil.close(con, st, rs);
         }

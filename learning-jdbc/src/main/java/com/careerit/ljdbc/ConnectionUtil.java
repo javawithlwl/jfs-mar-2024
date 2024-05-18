@@ -27,10 +27,9 @@ public final class ConnectionUtil {
         String username = properties.getProperty("db.username");
         String password = properties.getProperty("db.password");
         try{
-            log.info("Creating connection with url : {}", url);
             return DriverManager.getConnection(url, username, password);
         }catch (SQLException e){
-            log.info("Error while creating connection : ", e);
+            log.error("Error while creating connection : ", e);
         }
         throw new RuntimeException("Connection not created");
     }
@@ -43,7 +42,7 @@ public final class ConnectionUtil {
                     closeable.close();
                 }
             } catch (Exception e) {
-                e.printStackTrace();
+                log.error("Error while closing : ", e);
             }
         }
 
