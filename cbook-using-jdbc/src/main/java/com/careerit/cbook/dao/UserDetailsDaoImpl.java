@@ -1,13 +1,11 @@
 package com.careerit.cbook.dao;
 
-import com.careerit.cbook.domain.ContactDetails;
 import com.careerit.cbook.domain.UserDetails;
-import com.careerit.cbook.util.ConnectionUtil;
+import com.careerit.commons.ConnectionUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 

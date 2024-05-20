@@ -38,14 +38,14 @@ public class ContactBookManager {
         case 2:
           loginUser(userDetailsService);
           break;
+        case 3:
+          System.exit(0);
+          break;
         default:
           System.out.println("Invalid choice");
       }
     }
-
-
   }
-
   private static void registerUser(UserDetailsService userDetailsService) {
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter email:");
@@ -86,7 +86,7 @@ public class ContactBookManager {
         System.out.println("3. Delete contact");
         System.out.println("4. View all contacts");
         System.out.println("5. Search contact");
-        System.out.println("6. Exit");
+        System.out.println("6. Logout");
         int ch = sc.nextInt();
         switch (ch) {
           case 1:

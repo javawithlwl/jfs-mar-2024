@@ -20,7 +20,10 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>com.careerit</groupId>
+            <artifactId>common-util</artifactId>
+        </dependency>
     </dependencies>
 
 

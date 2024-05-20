@@ -1,8 +1,8 @@
 package com.careerit.cbook.dao;
 
 import com.careerit.cbook.domain.ContactDetails;
-import com.careerit.cbook.util.ConnectionUtil;
 import com.careerit.cbook.util.LoginUserContextHolder;
+import com.careerit.commons.ConnectionUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
