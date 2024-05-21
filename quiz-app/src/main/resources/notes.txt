@@ -1,0 +1,34 @@
+https://restcountries.com/v3.1/all
+
+-- Java Application to fetch the data from the above API and get required details
+like
+
+name: India
+capital: New Delhi
+region: Asia
+Population: 1295210000
+Area: 3287590.0
+Flag url: https://restcountries.com/data/ind.svg
+
+
+Dump the data into a database table
+
+
+Generate PDF, Excel, Csv report with the above details
+
+
+PDF generations:  (FOP)
+
+https://helpezee.wordpress.com/2017/02/26/creating-pdf-from-xml-using-apache-fop/
+
+Excel generation: (Apache POI)
+
+https://jsltech.blogspot.com/search?q=excel
+
+CSV generation: (OpenCSV)
+
+https://www.baeldung.com/opencsv
+
+
+
+

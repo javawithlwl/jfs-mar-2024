@@ -1,0 +1,8 @@
+
+1. Load csv data into player table
+2. Get total amount spent by each team
+3. Get total amount spent on each role
+4. Get total count of players in each country
+5. Get top 2 amount paid players in each team (Name and Amount)
+6. Get unique team names
+7. Get players of the given team

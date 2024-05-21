@@ -1,0 +1,158 @@
+{
+  "sports": [
+    {
+      "question": "Which country won the FIFA World Cup in 2018?",
+      "options": ["Germany", "Argentina", "France", "Brazil"],
+      "answer": "France"
+    },
+    {
+      "question": "Who is the all-time leading scorer in NBA history?",
+      "options": ["Kobe Bryant", "LeBron James", "Michael Jordan", "Kareem Abdul-Jabbar"],
+      "answer": "Kareem Abdul-Jabbar"
+    },
+    {
+      "question": "In which sport is the Ryder Cup contested?",
+      "options": ["Tennis", "Golf", "Cricket", "Rugby"],
+      "answer": "Golf"
+    },
+    {
+      "question": "Which tennis player has won the most Grand Slam singles titles?",
+      "options": ["Rafael Nadal", "Serena Williams", "Roger Federer", "Novak Djokovic"],
+      "answer": "Serena Williams"
+    },
+    {
+      "question": "Who holds the record for the fastest 100-meter sprint?",
+      "options": ["Usain Bolt", "Carl Lewis", "Justin Gatlin", "Tyson Gay"],
+      "answer": "Usain Bolt"
+    },
+    {
+      "question": "Which team has won the most Super Bowl titles in NFL history?",
+      "options": ["Dallas Cowboys", "New England Patriots", "Pittsburgh Steelers", "Green Bay Packers"],
+      "answer": "New England Patriots"
+    },
+    {
+      "question": "In which city are the headquarters of the International Olympic Committee (IOC) located?",
+      "options": ["Paris", "London", "Geneva", "Lausanne"],
+      "answer": "Lausanne"
+    },
+    {
+      "question": "Which boxer was known as 'The Greatest'?",
+      "options": ["Mike Tyson", "Muhammad Ali", "Floyd Mayweather Jr.", "Sugar Ray Robinson"],
+      "answer": "Muhammad Ali"
+    },
+    {
+      "question": "What is the national sport of Canada?",
+      "options": ["Hockey", "Lacrosse", "Baseball", "Soccer"],
+      "answer": "Lacrosse"
+    },
+    {
+      "question": "Which golfer has won the most major championships?",
+      "options": ["Jack Nicklaus", "Tiger Woods", "Arnold Palmer", "Phil Mickelson"],
+      "answer": "Jack Nicklaus"
+    }
+  ],
+  "java": [
+    {
+      "question": "Which of the following is not a primitive data type in Java?",
+      "options": ["int", "float", "char", "string"],
+      "answer": "string"
+    },
+    {
+      "question": "What keyword is used to define a constant in Java?",
+      "options": ["static", "final", "const", "constant"],
+      "answer": "final"
+    },
+    {
+      "question": "What is the output of the following code snippet?int x = 5;System.out.println(x++);",
+      "options": ["5", "6", "4", "Compilation error"],
+      "answer": "5"
+    },
+    {
+      "question": "In Java, what does the 'extends' keyword indicate in a class declaration?",
+      "options": ["It indicates that the class is abstract", "It indicates that the class is final", "It indicates inheritance", "It indicates encapsulation"],
+      "answer": "It indicates inheritance"
+    },
+    {
+      "question": "Which method is called automatically when an object is created?",
+      "options": ["start()", "run()", "init()", "constructor()"],
+      "answer": "constructor()"
+    },
+    {
+      "question": "Which keyword is used to define a subclass in Java?",
+      "options": ["extends", "sub", "superclass", "inherit"],
+      "answer": "extends"
+    },
+    {
+      "question": "What is the default value of a boolean variable in Java?",
+      "options": ["0", "null", "false", "true"],
+      "answer": "false"
+    },
+    {
+      "question": "Which of the following is not a valid Java identifier?",
+      "options": ["_myVar", "2myVar", "myVar2", "$myVar"],
+      "answer": "2myVar"
+    },
+    {
+      "question": "Which Java keyword is used to exit a loop?",
+      "options": ["exit", "break", "end", "stop"],
+      "answer": "break"
+    },
+    {
+      "question": "What does the 'static' keyword mean in Java?",
+      "options": ["It indicates that the variable or method belongs to the class itself", "It indicates that the variable or method belongs to an instance of the class", "It indicates that the variable or method is constant", "It indicates that the variable or method is dynamic"],
+      "answer": "It indicates that the variable or method belongs to the class itself"
+    }
+  ],
+  "general_knowledge": [
+    {
+      "question": "What is the capital city of France?",
+      "options": ["Berlin", "Paris", "London", "Rome"],
+      "answer": "Paris"
+    },
+    {
+      "question": "Which gas is most abundant in the Earth's atmosphere?",
+      "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Helium"],
+      "answer": "Nitrogen"
+    },
+    {
+      "question": "Who painted the Mona Lisa?",
+      "options": ["Pablo Picasso", "Leonardo da Vinci", "Vincent van Gogh", "Michelangelo"],
+      "answer": "Leonardo da Vinci"
+    },
+    {
+      "question": "What is the chemical symbol for water?",
+      "options": ["O2", "CO2", "H2O", "N2"],
+      "answer": "H2O"
+    },
+    {
+      "question": "Which planet in our solar system is known as the 'Red Planet'?",
+      "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+      "answer": "Mars"
+    },
+    {
+      "question": "Who wrote 'To Kill a Mockingbird'?",
+      "options": ["Harper Lee", "Mark Twain", "J.D. Salinger", "F. Scott Fitzgerald"],
+      "answer": "Harper Lee"
+    },
+    {
+      "question": "What is the tallest mammal in the world?",
+      "options": ["Elephant", "Giraffe", "Horse", "Rhino"],
+      "answer": "Giraffe"
+    },
+    {
+      "question": "What is the smallest country in the world?",
+      "options": ["Monaco", "Vatican City", "Maldives", "San Marino"],
+      "answer": "Vatican City"
+    },
+    {
+      "question": "Which famous physicist developed the theory of relativity?",
+      "options": ["Isaac Newton", "Albert Einstein", "Stephen Hawking", "Nikola Tesla"],
+      "answer": "Albert Einstein"
+    },
+    {
+      "question": "Who is known as the 'Father of Computers'?",
+      "options": ["Alan Turing", "Charles Babbage", "Tim Berners-Lee", "Bill Gates"],
+      "answer": "Charles Babbage"
+    }
+  ]
+}
