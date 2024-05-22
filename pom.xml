@@ -17,6 +17,7 @@
         <module>common-util</module>
         <module>ipl-stats-jdbc</module>
         <module>quiz-app</module>
+        <module>spring-boot-hello-world</module>
     </modules>
 
     <properties>
