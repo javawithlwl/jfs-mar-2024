@@ -19,6 +19,7 @@
         <module>quiz-app</module>
         <module>spring-boot-hello-world</module>
         <module>learning-spring-core</module>
+        <module>learning-spring-boot</module>
     </modules>
 
     <properties>
