@@ -22,7 +22,10 @@ public class Contact extends BaseEntity{
     private String email;
     @Column(name = "mobile")
     private String mobile;
-    @Column(name = "city")
-    private String city;
+
+    @OneToOne
+    @JoinColumn(name = "address_id",referencedColumnName = "id")
+    private Address address;
+
 
 }

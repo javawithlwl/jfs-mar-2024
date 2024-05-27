@@ -3,15 +3,26 @@ package com.careerit.sb;
 import com.careerit.sb.jdbc.*;
 import com.careerit.sb.jpa.Account;
 import com.careerit.sb.jpa.AccountRepository;
+import com.careerit.sb.jpa.cbook.domain.Address;
+import com.careerit.sb.jpa.cbook.domain.Cart;
 import com.careerit.sb.jpa.cbook.domain.Contact;
+import com.careerit.sb.jpa.cbook.domain.Item;
+import com.careerit.sb.jpa.cbook.repo.AddressRepository;
+import com.careerit.sb.jpa.cbook.repo.CartRepository;
+import com.careerit.sb.jpa.cbook.repo.ContactRepository;
+import com.careerit.sb.jpa.cbook.repo.ItemRepository;
 import com.careerit.sb.jpa.cbook.service.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+import java.util.UUID;
 
 @SpringBootApplication
 public class LearningSpringBootApplication implements CommandLineRunner {
@@ -27,6 +38,18 @@ public class LearningSpringBootApplication implements CommandLineRunner {
 
 	@Autowired
 	private ContactService contactService;
+
+	@Autowired
+	private ContactRepository contactRepository;
+
+	@Autowired
+	private AddressRepository addressRepository;
+
+	@Autowired
+	private CartRepository cartRepository;
+
+	@Autowired
+	private ItemRepository itemRepository;
 	public static void main(String[] args) {
     SpringApplication.run(LearningSpringBootApplication.class, args);
   }
@@ -61,17 +84,75 @@ public class LearningSpringBootApplication implements CommandLineRunner {
 			System.out.println("-------------------------------------------------");
 		});*/
 
+
+
+
+
+		/*Address address = new Address();
+		address.setAddress("Sai Residency");
+		address.setCity("Hyderabad");
+		address.setState("Telangana");
+		address.setCountry("India");
+		address.setZipCode("500032");
+
 		Contact contact = new Contact();
 		contact.setName("Krish");
 		contact.setEmail("krish@gmail.com");
 		contact.setMobile("9876543210");
-		contact.setCity("Hyderabad");
+		contact.setAddress(address);
+		addContact(contact);*/
 
-		contactService.createContact(contact);
+		//Contact contact = getContact(UUID.fromString("f155c623-074b-4d3e-9d33-d04ffec96b3d"));
+
+		/*List<Contact> list = contactRepository.findAll();
+		list.forEach(contact -> {
+			System.out.println(contact.getName());
+			System.out.println(contact.getEmail());
+			System.out.println(contact.getAddress().getCity());
+			System.out.println("-------------------------------------------------");
+		});*/
+
+		Item item1 = new Item();
+		item1.setName("Laptop");
+		item1.setPrice(45000);
+
+		Item item2 = new Item();
+		item2.setName("Mobile");
+		item2.setPrice(25000);
+
+		Item item3 = new Item();
+		item3.setName("Tablet");
+		item3.setPrice(15000);
+
+		Cart cart = new Cart();
+		cart.setName("Gadgets");
+		cartRepository.save(cart);
+		item1.setCart(cart);
+		item2.setCart(cart);
+		item3.setCart(cart);
+
+		Set<Item> items = Set.of(item1, item2, item3);
+		itemRepository.saveAll(items);
+
+
+
+
+
+
 
 
 	}
 
+	@Transactional
+	public void addContact(Contact contact) {
+		Address address = contact.getAddress();
+		addressRepository.save(address);
+	  contactRepository.save(contact);
+	}
+
+	public Contact getContact(UUID id) {
+		return contactRepository.findById(id).orElse(null);
+	}
 
 
 	private List<Account> accountList() {
