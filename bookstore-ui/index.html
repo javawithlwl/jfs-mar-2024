@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BookStore Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/img/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            BookStore
+          </a>
+        </div>
+      </nav>
+      <div class="container mt-2">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="mb-2 mt-2">
+                                <input type="text" id="idSearch" class="form-control" placeholder="Search Book">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 mb-2">
+                        <div class="col">
+                            <div id="idBookDetails"></div>
+                        </div>
+                    </div>
+                   
+                  </div>  
+                <div class="col-md-4">
+                
+                    <div class="mb-2">
+                        <!--Add label and title input field-->
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="title" name="title">
+                    </div>
+                    <div class="mb-2">
+                        <!--Add label and author input field-->
+                        <label for="author" class="form-label">Author</label>
+                        <input type="text" class="form-control" id="author" name="author">
+                    </div>
+                    <div class="mb-2">
+                        <!--Add label and price input field-->
+                        <label for="price" class="form-label">Price</label>
+                        <input type="number" class="form-control" id="price" name="price">
+                    </div>
+                    <div class="mb-2">
+                        <!--Add label and category dropdown-->
+                        <label for="category" class="form-label">Category</label>
+                        <select class="form-select" id="category" name="category">
+                            <option value="1">Programming</option>
+                            <option value="2">Database</option>
+                            <option value="3">Story</option>
+                        </select>
+                    </div>
+                    <div class="mb-2">
+                        <!-- Add leable and description as textarea-->
+                        <label for="description" class="form-label">Description</label>
+                        <textarea class="form-control" id="description" name="description"></textarea>
+                    </div>
+                    <div class="mt-3">
+                        <!-- Add button to submit the form-->
+                        <button class="btn btn-primary" id="idAddBook">Add Book</button>
+                    </div>
+                </div>
+            </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
