@@ -19,7 +19,6 @@ public class EmailServiceImpl implements EmailService{
   private final JavaMailSender javaMailSender;
   @Override
   public String sendSimpleMail(EmailDetails details) {
-
     try {
       SimpleMailMessage message = new SimpleMailMessage();
       message.setTo(details.getRecipient());
