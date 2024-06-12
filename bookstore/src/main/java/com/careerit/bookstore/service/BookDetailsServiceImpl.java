@@ -15,11 +15,13 @@ import java.util.UUID;
 @Slf4j
 public class BookDetailsServiceImpl implements BookDetailsService {
 
+    public static final String BOOK_ID_MUST_NOT_BE_NULL = "Book id must not be null";
     private final BookDetailsRepository bookDetailsRepository;
+
 
     @Override
     public BookDetails createBook(BookDetails bookDetails) {
-        Assert.notNull(bookDetails, "BookDetails must not be null");
+        Assert.notNull(bookDetails, BOOK_ID_MUST_NOT_BE_NULL);
         bookDetailsRepository.save(bookDetails);
         log.info("Book with title : {} is created with id :  {}", bookDetails.getTitle(), bookDetails.getId());
         return bookDetails;
@@ -28,7 +30,7 @@ public class BookDetailsServiceImpl implements BookDetailsService {
     @Override
     public BookDetails updateBook(BookDetails bookDetails) {
         Assert.notNull(bookDetails, "BookDetails must not be null");
-        Assert.notNull(bookDetails.getId(), "Book id must not be null");
+        Assert.notNull(bookDetails.getId(), BOOK_ID_MUST_NOT_BE_NULL);
         log.info("Book with id : {} is requested for update", bookDetails.getId());
         bookDetailsRepository.save(bookDetails);
         log.info("Book with id : {} is updated", bookDetails.getId());
@@ -37,7 +39,7 @@ public class BookDetailsServiceImpl implements BookDetailsService {
 
     @Override
     public void deleteBook(UUID id) {
-        Assert.notNull(id, "Book id must not be null");
+        Assert.notNull(id, BOOK_ID_MUST_NOT_BE_NULL);
         bookDetailsRepository.deleteById(id);
     }
 

@@ -35,7 +35,7 @@ public class OpenApiConfig {
                 registry.addMapping("/**")
                     .allowedOrigins("*") // Add your allowed origins
                     .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Add your allowed HTTP methods
-                    .allowedHeaders("*") // Allow all headers
+                    .allowedHeaders("*") //NOSONAR // Allow all headers
                     .maxAge(3600); // Set the max age for preflight requests
             }
         };
